@@ -1,0 +1,39 @@
+@font-face {
+	font-family: "Dosis-ExtraBold";
+	src: url("../fonts/Dosis-ExtraBold.ttf");
+}
+@font-face {
+	font-family: "Dosis-SemiBold";
+	src: url("../fonts/Dosis-SemiBold.ttf");
+}
+@font-face {
+	font-family: "Dosis-Regular";
+	src: url("../fonts/Dosis-Regular.ttf");
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+html {
+	font-family: "Dosis-Regular", sans-serif;
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+body {
+	background: linear-gradient(
+		0deg,
+		rgba(233, 229, 229, 1) 0%,
+		rgba(250, 250, 250, 1) 100%
+	);
+	font-size: 1.6rem;
+}
+
+h2 {
+	font-family: "Rock Salt";
+}

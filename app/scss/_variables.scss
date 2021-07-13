@@ -1,0 +1,21 @@
+$marginLandR: 200px;
+$white: #fff;
+$black: #222;
+$darkgrey: #555;
+$lightorange: lighten(#f7a803, 15%);
+$orange: #f7a803;
+$darkred:#b81717;
+$btnOgangeBgc: radial-gradient(
+	circle,
+	rgba(255, 212, 122, 1) 0%,
+	rgba(247, 168, 3, 1) 48%
+);
+$btnOgangeBgcDarken: radial-gradient(
+	circle,
+	rgba(255, 195, 70, 1) 0%,
+	rgba(232, 159, 6, 1) 15%
+);
+
+@mixin boxshadow {
+	box-shadow: 1px 4px 5px 2px #e0d6cf;
+}

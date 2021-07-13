@@ -1,0 +1,27 @@
+.section2 {
+	width: 100%;
+	max-width: 500px;
+	margin: 0 auto 50px;
+	background: url("../img/H.png");
+	background-repeat: no-repeat;
+	background-position: 150px, 80px;
+	@media (min-width: 1200px) {
+		max-width: 100%;
+		padding: 0 200px;
+	}
+	h2 {
+		padding: 50px 0;
+		text-align: center;
+		@media (min-width: 1200px) {
+			text-align: left;
+			font-size: 4rem;
+		}
+	}
+	p {
+		text-align: justify;
+		@media (min-width: 1200px) {
+			font-size: 2rem;
+			line-height: 3.8rem;
+		}
+	}
+}

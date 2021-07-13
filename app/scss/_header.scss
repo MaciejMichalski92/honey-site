@@ -1,0 +1,99 @@
+header {
+	& .text-container {
+		position: relative;
+		width: 100%;
+		max-width: 500px;
+		min-height: 80vh;
+		padding: 50px 10px 0;
+		margin: 0 auto;
+		text-align: center;
+		background-image: url("../img/header-bg-cover.png");
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		@media (min-width: 768px) {
+			margin: 50px;
+			width: 50%;
+			text-align: initial;
+			background-image: none;
+		}
+		@media (min-width: 1200px) {
+			margin: 50px $marginLandR;
+		}
+		& img {
+			@media (min-width: 1200px) {
+				position: absolute;
+				top: 5%;
+				right: 0;
+				display: inline-block;
+			}
+		}
+	}
+	& h1 {
+		font-size: 4.3rem;
+		font-family: "Rock Salt", sans-serif;
+		@media (min-width: 1200px) {
+			font-size: 9.3rem;
+			line-height: 15.3rem;
+		}
+	}
+	h1:nth-child(odd) {
+		margin-bottom: 70px;
+	}
+	& p {
+		text-align: justify;
+		font-size: 2rem;
+		margin-bottom: 100px;
+		line-height: 3.8rem;
+		@media (min-width: 768px) {
+		}
+	}
+	& a {
+		font-family: "Dosis-SemiBold";
+		padding: 20px 50px;
+		margin-top: 150px;
+		font-size: 2rem;
+		color: $black;
+		background: $btnOgangeBgc;
+		border-radius: 10px;
+		text-decoration: none;
+		&:hover {
+			background: $btnOgangeBgcDarken;
+		}
+	}
+	& .header-images-wrapper {
+		display: none;
+		padding-left: 50px;
+		position: relative;
+		@media (min-width: 768px) {
+			display: inline-block;
+			position: absolute;
+			top: 0;
+			width: 100%;
+			min-height: 100vh;
+		}
+		& img {
+			position: absolute;
+			top: 0;
+			&:nth-child(1) {
+				top: 0;
+				right: 0;
+			}
+			&:nth-child(2) {
+				display: none;
+				top: 30%;
+				right: 30%;
+				@media (min-width: 1150px) {
+					right: 25%;
+				}
+				@media (min-width: 1350px) {
+					display: initial;
+					right: 20%;
+				}
+				@media (min-width: 1600px) {
+					right: 15%;
+				}
+			}
+		}
+	}
+}
